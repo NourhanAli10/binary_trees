@@ -90,4 +90,6 @@ int isHeapUtil(const binary_tree_t *tree);
 int isCompleteUtil(const binary_tree_t *tree, unsigned int index,
 unsigned int number_nodes);
 unsigned int countNodes(const binary_tree_t *tree);
+int CountNodes(binary_tree_t *tree);
+heap_t *complete_insert(binary_tree_t *tree, int value, int index, int pos);
 #endif /* _BINARY_TREES_H_ */

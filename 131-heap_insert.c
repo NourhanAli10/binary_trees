@@ -1,11 +1,12 @@
 #include "binary_trees.h"
 
 /**
- * countNodes - Counts the number of nodes in a tree.
+ * CountNodes - Counts the number of nodes in a tree.
  * @tree: The pointer to the root of the tree.
  * Return: The number of nodes in the tree.
  */
-int countNodes(binary_tree_t *tree)
+
+int CountNodes(binary_tree_t *tree)
 {
 	if (tree == NULL)
 		return (0);
