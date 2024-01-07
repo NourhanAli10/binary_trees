@@ -10,7 +10,7 @@ int CountNodes(binary_tree_t *tree)
 {
 	if (tree == NULL)
 		return (0);
-	return (1 + countNodes(tree->left) + countNodes(tree->right));
+	return (1 + CountNodes(tree->left) + CountNodes(tree->right));
 }
 
 /**
@@ -61,7 +61,7 @@ heap_t *heap_insert(heap_t **root, int value)
 		*root = binary_tree_node(NULL, value);
 		return (*root);
 	}
-	inserted = complete_insert(*root, value, 0, countNodes(*root) + 1);
+	inserted = complete_insert(*root, value, 0, CountNodes(*root) + 1);
 	while (inserted->parent && inserted->n > inserted->parent->n)
 	{
 		inserted->n = inserted->parent->n;
