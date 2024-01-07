@@ -83,5 +83,11 @@ heap_t *heap_insert(heap_t **root, int value);
 heap_t *array_to_heap(int *array, size_t size);
 int heap_extract(heap_t **root);
 int *heap_to_sorted_array(heap_t *heap, size_t *size);
-
+void recurse_extract(heap_t *tree);
+heap_t *max(heap_t *tree);
+int binary_tree_is_heap(const binary_tree_t *tree);
+int isHeapUtil(const binary_tree_t *tree);
+int isCompleteUtil(const binary_tree_t *tree, unsigned int index,
+unsigned int number_nodes);
+unsigned int countNodes(const binary_tree_t *tree);
 #endif /* _BINARY_TREES_H_ */
